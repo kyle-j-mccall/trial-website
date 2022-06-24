@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* create nav container that takes up etnire top of screen */
+
+.nav-container {
+    
+    font-family: 'Cantarell', sans-serif;
+    width: 100%;
+    background-color: rgb(41, 35, 35);
+    
+}
+
+/* create list items as links and have h1 take up left side of navbar. links should be horiziontally spaced on the right side of the navbar */
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+#navbar-logo {
+    color: white;
+    justify-self: start;
+    font-size: 40px;
+    margin-left: 20px;
+
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    justify-self: end;
+    text-decoration: none;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 6px;
+}
+.nav-links:hover {
+    color: cyan;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: solid 1px blue;
+    
+}
+
+.nav-links-btn {
+    background-color: green;
+    border-radius: 4px;
+    padding: 6px 16px;
+}
+
+.nav-links-btn:hover {
+    background-color: transparent;
+    border: solid 1px blue;
+    transition: all 0.3s ease-in-out;
+}
